@@ -1,0 +1,103 @@
+{
+
+   "forms": [
+    {
+        "title":"Form1" , 
+        "id" : "1" , 
+        "fields" : [
+            {
+                "name":"First_Name" , 
+                "title" : "First Name" , 
+                "type" : "Text",
+                "validation" : {
+                    "required" : true,
+                    "isName" : true
+                }
+            } ,
+            {
+                "name" : "date",
+                "title" : "pick a date",
+                "type" : "Date",
+                "validation" : {
+                    "required" : true
+                }
+            }, 
+            {
+                "name":"Loc" , 
+                "title" : "Your Location" , 
+                "type" : "Location",
+                "validation" : {
+                    "required" : false
+                }
+            } , 
+            {
+                "name":"Request_Type" , 
+                "title" : "Request Type" , 
+                "type" : "Text" , 
+                "options" : [
+                    {"label" : "Help" , "value" : "Help"}, 
+                    {"label" : "Info" , "value" : "Information"} 
+                ] 
+            } , 
+            {
+                "name":"Base_Location" , 
+                "title" : "Base Location" , 
+                "type" : "Location" , 
+                "options" : [
+                    {"label" : "Base1" , "value" : {"lat" : "1.2" , "long": "3.2"}}, 
+                    {"label" : "Base2" , "value" : {"lat" : "2.3" , "long" : "1.434" }} 
+                ] 
+            } 
+        ] 
+    },
+    {
+        "title":"Form2" , 
+        "id" : "2" , 
+        "fields" : [
+            {
+                "name":"First_Name" , 
+                "title" : "First Name" , 
+                "type" : "Text",
+                "validation" : {
+                    "required" : true,
+                    "isName" : true
+                }
+            } , 
+            {
+                "name":"email" , 
+                "title" : "Email" , 
+                "type" : "Text",
+                "validation" : {
+                    "required" : true,
+                    "isEmail" : true
+                }
+            } , 
+
+            {
+                "name":"Blood Type" , 
+                "title" : "Blood Type" , 
+                "type" : "Text" , 
+                "options" : [
+                    {"label" : "BTAB+" , "value" : "AB+"},
+                    {"label" : "BTAB-" , "value" : "AB-"},
+                    {"label" : "BTA+" , "value" : "A+"}, 
+                    {"label" : "BTA-" , "value" : "A-"},
+                    {"label" : "BTB+" , "value" : "B+"},
+                    {"label" : "BTB-" , "value" : "B-"},
+                    {"label" : "BTO+" , "value" : "O+"},
+                    {"label" : "BTO-" , "value" : "O-"}
+                ] 
+            } , 
+            {
+                "name":"age" , 
+                "title" : "Age" , 
+                "type" : "Text" , 
+                "validation" : {
+                    "required" : true,
+                    "isAge" : true
+                }
+            } 
+        ] 
+    }
+]
+}
