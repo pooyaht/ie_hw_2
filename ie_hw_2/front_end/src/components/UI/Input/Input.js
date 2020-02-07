@@ -33,6 +33,7 @@ const input = ( props ) => {
         case ( 'date' ):
             inputElement =  <input  
                 type = "date"
+		value={props.value}
                 className={classes.InputElement} 
                 onChange={props.changed} />;
             break;
