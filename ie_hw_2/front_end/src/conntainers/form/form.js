@@ -93,7 +93,7 @@ class form extends Component {
         let message = []
         let isValid = true;
         if (!rules) {
-            return true;
+            return [true,[]];
         }
         if (rules.required) {
             //console.log()
